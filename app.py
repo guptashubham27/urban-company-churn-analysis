@@ -16,9 +16,7 @@ st.set_page_config(
 # LOAD DATA
 # ------------------------------------------------
 
-df = pd.read_csv(
-    r"C:\Users\Priya\OneDrive\Desktop\SHUBHAM\Data Science Projects\URBAN  COMPANY SERVICE INTELLIGENCE & CHURN RISK ANALYSIS\data\customer_churn_analysis.csv"
-)
+df = pd.read_csv("customer_churn_analysis.csv")
 
 # ------------------------------------------------
 # TITLE
@@ -172,3 +170,6 @@ st.markdown("""
 st.subheader("Customer Intelligence Dataset")
 
 st.dataframe(df)
+
+# cd "C:\Users\Priya\OneDrive\Desktop\SHUBHAM\Data Science Projects\URBAN  COMPANY SERVICE INTELLIGENCE & CHURN RISK ANALYSIS"
+# streamlit run app/app.py
